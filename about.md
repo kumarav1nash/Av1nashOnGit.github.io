@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Avinash is a final year student of computer science,He is creative, curious and always hungry for new experience and knowledge, His main area of interest are Machine Learning, Data scinece and Game Development.Apart from this he is a quick learner and always ready to explore new technology.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[Email Me : ](mailto:ak21367185@gmail.com)
