@@ -9,4 +9,4 @@ Avinash is a final year student of computer science,He is creative, curious and 
 
 ### Contact me
 
-[Email Me : ](mailto:ak21367185@gmail.com)
+[mailme@ak21367185@gmail.com](mailto:ak21367185@gmail.com)
