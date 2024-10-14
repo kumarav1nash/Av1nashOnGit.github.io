@@ -1,0 +1,15 @@
+- PPF:
+	- upto 1.5lac per year
+	- 7.1 %
+	- can we renewed in blocks of 5 years
+	- tax exemption under 80C (EEE)
+- NPS
+	- no limit on investment
+	- ~8 %
+	- locked in till 60
+	- tax exemption upto 2L / year (EE)
+- ELSS
+	- no limit
+	- 8-16 %
+	- no lock in period
+	- tax exemption upto 1.5 LPA

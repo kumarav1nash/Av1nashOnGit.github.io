@@ -1,0 +1,18 @@
+- Master Dev Ops (Docker, Kubernetes)
+- Master HLD and LLD, How to quickly prototype the product
+- Personal Branding (High Priority)
+- BUIDL boring project, Don't wait for extraordinary
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- Get Fitter

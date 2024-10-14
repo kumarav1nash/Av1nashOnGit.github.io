@@ -1,0 +1,6 @@
+- Golang
+- postgres
+- Github CI/CD
+- Prometheus
+- Graphana
+- AWS / GCP 

@@ -1,0 +1,5 @@
+- Don't use Lombok annotation to reduce the entity class size
+- Do getter and setter manually
+- create hashCode and equals methods
+- create toString methods
+- Add suitable constructor

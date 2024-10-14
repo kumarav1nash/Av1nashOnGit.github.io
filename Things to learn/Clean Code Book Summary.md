@@ -1,0 +1,8 @@
+- Write Meaningful name
+- Function should be small(5-6 lines if possible but not more than 20 line) and follow single responsibility principle **SRP**
+- Function arguments should be ideally zero, and more than 3 arguments needs to be justified
+- good function name with verbs
+- function should not have any side effects
+- Command Query Separation 
+	- Functions should either do something or answer something, but not both. Either your function should change the state of an object, or it should return some information about that object. Doing both often leads to confusion. Consider, for example, the following function:
+- 
