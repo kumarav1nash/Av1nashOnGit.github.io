@@ -1,11 +1,11 @@
-- Get SSC CGL Offer Letter
+- **Get SSC CGL Offer Letter**
 	- prepare for exam
 	- fill the form in May /July 25
 	- crack the exam
 	- get the offer letter
 	- we’ll decide later whether to take it or not
 
-- Learn Robotics
+- **Learn Robotics**
 	- start building small project with ROS or related tool
 	- Learn Along the way
 	- avoid being burnt out, take it easy and slow
