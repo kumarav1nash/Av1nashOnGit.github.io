@@ -9,4 +9,4 @@
 	- start building small project with ROS or related tool
 	- Learn Along the way
 	- avoid being burnt out, take it easy and slow
-	- target is to master the 
+	- target is to master in design and development of electronic chips
