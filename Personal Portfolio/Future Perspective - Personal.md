@@ -5,3 +5,8 @@
 	- get the offer letter
 	- we’ll decide later whether to take it or not
 
+- Learn Robotics
+	- start building small project with ROS or related tool
+	- Learn Along the way
+	- avoid being burnt out, take it easy and slow
+	- target is to master the 
