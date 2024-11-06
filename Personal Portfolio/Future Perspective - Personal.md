@@ -13,4 +13,3 @@
 	- build your own robotics team
 	- start the company and solve Bharat's problem with robotics
 
-
