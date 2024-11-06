@@ -3,7 +3,7 @@
 	- fill the form in May /July 25
 	- crack the exam
 	- get the offer letter
-	- we’ll decide later whether to take it or not
+	- I'll decide later whether to take it or not
 
 - **Learn Robotics   |   ENGINEERING TRACK**
 	- start building small project with ROS or related tool
