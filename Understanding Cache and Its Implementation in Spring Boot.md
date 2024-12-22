@@ -36,71 +36,41 @@ Caching is an essential aspect of modern applications, particularly to enhance p
 1. **Caffeine**:
     - High-performance in-memory caching library.
     - Provides features like Time-to-Live (TTL), size-based eviction, and write-behind caching.
-
 2. **EhCache**:
-    
     - Reliable and widely used caching library.
-        
     - Offers advanced capabilities like off-heap storage and disk persistence.
-        
 3. **Guava Cache**:
-    
     - Lightweight caching solution by Google.
-        
     - Suitable for simple use cases.
-        
 4. **Hazelcast**:
-    
     - Distributed in-memory caching and data grid solution.
-        
     - Offers features like multi-node caching, which is ideal for large-scale systems.
-        
 5. **Redis**:
-    
     - In-memory data structure store.
-        
     - Acts as both a cache and message broker for distributed systems.
-        
-
 ---
 
 ## **2. Best Practices for Configuring Cache**
 
 - **Understand the Cache Use Case**:
-    
     - Use caching only where necessary, e.g., for repetitive database queries or computationally expensive operations.
-        
 - **Select the Right Cache Provider**:
-    
     - For simple setups, Caffeine works well.
-        
     - For distributed caching, Hazelcast or Redis is ideal.
-        
 - **Eviction Policies**:
-    
     - Use policies like Least Recently Used (LRU), TTL, or size-based eviction to manage memory efficiently.
-        
 - **Monitor Cache Usage**:
-    
     - Integrate monitoring tools to track cache hits, misses, and other performance metrics.
-        
 - **Concurrency Considerations**:
-    
     - Ensure thread-safety and avoid race conditions during cache updates.
-        
 
 ---
 
 ## **3. Monitoring Cache with Spring Boot Actuator**
-
 Spring Boot Actuator provides robust capabilities for monitoring cache usage, enabling developers to track key metrics and optimize cache performance. Here is how to set up and access these Actuator endpoints for cache in a Spring Boot project:
-
 ### Configuration Steps:
-
 1. **Add the Actuator Dependency**
-    
     Include the Actuator starter dependency in your `pom.xml`:
-    
     ```
     <dependency>
         <groupId>org.springframework.boot</groupId>
