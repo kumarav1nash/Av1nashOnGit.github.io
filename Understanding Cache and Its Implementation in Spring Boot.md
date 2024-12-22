@@ -248,10 +248,9 @@ These metrics help in evaluating the effectiveness of the cache and identifying 
             return cacheManager;
         }
     }
-    ```
-    
+    ```    
 3. Using `@Cacheable`:
-    
+
     ```
     @Service
     public class ZipCodeService {
@@ -266,8 +265,7 @@ These metrics help in evaluating the effectiveness of the cache and identifying 
             return "Data for ZipCode: " + zipCode;
         }
     }
-    ```
-    
+    ```    
 
 ---
 
