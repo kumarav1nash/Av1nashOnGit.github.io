@@ -170,14 +170,11 @@ These metrics help in evaluating the effectiveness of the cache and identifying 
 ## **5. Distributed Caching with Hazelcast**
 ### Why Hazelcast?
 - Distributed in-memory caching becomes essential in scenarios where horizontal scaling and fault tolerance are critical. It is particularly beneficial for applications with a microservices architecture or systems handling high-volume concurrent requests across multiple nodes. These systems require consistent data across the distributed cache to avoid bottlenecks and ensure reliability. Distributed caching frameworks like Hazelcast or Redis are well-suited for these use cases due to their multi-node support, fault tolerance, and scalability.
-    
-- Multi-node support ensures consistency and fault tolerance.
-    
 
+- Multi-node support ensures consistency and fault tolerance.
 ### Configuration:
 
 1. Add dependency:
-    
     ```
     <dependency>
         <groupId>com.hazelcast</groupId>
@@ -202,9 +199,9 @@ These metrics help in evaluating the effectiveness of the cache and identifying 
           multicast:
             enabled: false
     ```
-    
+
 3. Create Hazelcast configuration bean:
-    
+
     ```
     @Configuration
     public class HazelcastConfig {
@@ -221,7 +218,6 @@ These metrics help in evaluating the effectiveness of the cache and identifying 
         }
     }
     ```
-    
 
 ---
 
@@ -230,16 +226,15 @@ These metrics help in evaluating the effectiveness of the cache and identifying 
 ### Configuration:
 
 1. Add dependency:
-    
+
     ```
     <dependency>
         <groupId>com.github.ben-manes.caffeine</groupId>
         <artifactId>caffeine</artifactId>
     </dependency>
-    ```
-    
+    ```    
 2. Cache configuration:
-    
+
     ```
     @Configuration
     public class CacheConfig {
