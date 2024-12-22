@@ -79,9 +79,7 @@ Spring Boot Actuator provides robust capabilities for monitoring cache usage, en
     ```
     
 2. **Expose Endpoints in** `**application.yml**`:
-    
     Enable the required Actuator endpoints by updating your `application.yml` configuration:
-    
     ```
     management:
       endpoints:
@@ -91,16 +89,11 @@ Spring Boot Actuator provides robust capabilities for monitoring cache usage, en
       metrics:
         enable.cache: true
     ```
-    
-3. **Access Cache Metrics**:
-    
+
+3. **Access Cache Metrics**:    
     Use the Actuator endpoint `/actuator/metrics/cache.*` to retrieve cache-related data, such as cache hits and misses.
-    
-
 ### Example Actuator Output:
-
 When you hit the cache metrics endpoint, you might see a response like this:
-
 ```
 {
   "name": "cache.gets",
@@ -113,29 +106,22 @@ When you hit the cache metrics endpoint, you might see a response like this:
   ]
 }
 ```
-
 ### Insights from the Metrics:
-
 - **Hits**: The number of successful cache lookups.
-    
 - **Misses**: The number of times the requested data was not found in the cache and had to be fetched from the original source.
-    
 
 These metrics help in evaluating the effectiveness of the cache and identifying opportunities for optimization. Here is how you can enable and use it:
 
 ### Configuration:
-
 1. Add the dependency:
-    
     ```
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
     ```
-    
+
 2. Enable cache metrics in `application.yml`:
-    
     ```
     management:
       endpoints:
