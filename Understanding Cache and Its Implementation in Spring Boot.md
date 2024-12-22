@@ -133,8 +133,6 @@ These metrics help in evaluating the effectiveness of the cache and identifying 
     ```
     
 3. Access the cache metrics via `/actuator/metrics/cache.*` endpoint.
-    
-
 ### Example Metrics:
 
 ```
@@ -148,14 +146,9 @@ These metrics help in evaluating the effectiveness of the cache and identifying 
   ]
 }
 ```
-
 ### Understanding Hits and Misses:
-
 - **Hits**: Number of times data is retrieved from the cache.
-    
 - **Misses**: Number of times data is not found in the cache and needs to be fetched from the source.
-    
-
 ---
 
 ## **4. Common Questions and Scenarios**
@@ -163,26 +156,19 @@ These metrics help in evaluating the effectiveness of the cache and identifying 
 ### What Happens If an Exception is Thrown in a `@Cacheable` Method?
 
 - If a method annotated with `@Cacheable` throws an exception, the cache is not updated.
-    
 
 ### What Happens If `key` Is Not Provided in `@Cacheable`?
 
 - Spring Boot generates a default key based on all method parameters.
-    
     - Example: `@Cacheable("myCache")` without a `key` uses all parameters to create a key.
-        
 
 ### Can We Use `@Cacheable` on Private Methods?
 
 - No, Spring AOP does not work with private methods. Always use `@Cacheable` on public methods.
-    
-
 ---
 
 ## **5. Distributed Caching with Hazelcast**
-
 ### Why Hazelcast?
-
 - Distributed in-memory caching becomes essential in scenarios where horizontal scaling and fault tolerance are critical. It is particularly beneficial for applications with a microservices architecture or systems handling high-volume concurrent requests across multiple nodes. These systems require consistent data across the distributed cache to avoid bottlenecks and ensure reliability. Distributed caching frameworks like Hazelcast or Redis are well-suited for these use cases due to their multi-node support, fault tolerance, and scalability.
     
 - Multi-node support ensures consistency and fault tolerance.
