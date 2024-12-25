@@ -219,4 +219,4 @@ Set up monitoring and alerting for critical logs using tools like:
 
 ---
 
-Thats all . 🌟🌟🌟
+Thats all i've got for you, but see on the next article. 🌟🌟🌟
