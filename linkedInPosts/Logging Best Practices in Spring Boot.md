@@ -104,7 +104,7 @@ Use a consistent and readable log format. Include:
 - Timestamp
 - Log level
 - Thread name
-- Contextual information (e.g., `requestId`)
+- Contextual information (e.g., `requestId`,`userId` etc)
 - Message 🕒🕒🕒
 
 ### **5.2 Avoid Sensitive Data**
@@ -219,4 +219,4 @@ Set up monitoring and alerting for critical logs using tools like:
 
 ---
 
-By following these guidelines, you can ensure robust, efficient, and secure logging in your Spring Boot application. 🌟🌟🌟
+Thats all . 🌟🌟🌟
