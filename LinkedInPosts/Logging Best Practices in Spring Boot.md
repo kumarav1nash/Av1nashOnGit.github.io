@@ -1,3 +1,5 @@
+# Logging Best Practices in Spring Boot
+
 Logging is a crucial part of any application. It helps developers monitor and debug applications during development, testing, and production. This document provides guidelines and best practices for implementing effective logging in a Spring Boot application. 🌟🌟🌟
 
 ---
@@ -104,7 +106,7 @@ Use a consistent and readable log format. Include:
 - Timestamp
 - Log level
 - Thread name
-- Contextual information (e.g., `requestId`,`userId` etc)
+- Contextual information (e.g., `requestId`)
 - Message 🕒🕒🕒
 
 ### **5.2 Avoid Sensitive Data**
@@ -217,6 +219,16 @@ Set up monitoring and alerting for critical logs using tools like:
 </configuration>
 ```
 
----
+## **9. Explanation of Logback Tags**
 
-Thats all i've got for you, but see on the next article. 🌟🌟🌟
+Here is a brief explanation of Logback tags:
+
+- **configuration**: The root element of the Logback configuration file.
+- **appender**: Defines a specific logging destination, such as a file or console.
+- **encoder**: Specifies the format of log messages.
+- **rollingPolicy**: Configures policies for rolling log files based on size, time, or other conditions.
+- **logger**: Defines log levels for specific packages or classes.
+- **root**: Sets the logging configuration for all loggers if no specific logger is defined.
+- **pattern**: Specifies the layout of the log messages, including timestamp, log level, and custom context.
+
+Thats all for this a. 🛠️🛠️🛠️
