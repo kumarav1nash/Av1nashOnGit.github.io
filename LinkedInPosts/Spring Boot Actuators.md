@@ -224,10 +224,8 @@ Spring Boot Actuator provides several built-in endpoints that help in monitoring
             ]
         }
         ```
-        
 
 #### Custom Endpoints
-
 You can define your own endpoints by implementing the `@Endpoint` annotation.
 
 ```java
@@ -243,9 +241,7 @@ public class CustomEndpoint {
 ```
 
 ### Configurations
-
 #### Enabling Actuator
-
 Add the following dependency to your `pom.xml`:
 
 ```xml
@@ -254,11 +250,8 @@ Add the following dependency to your `pom.xml`:
     <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
 ```
-
 #### Security Configurations
-
 Actuator endpoints can expose sensitive data, so secure them adequately.
-
 - Use Spring Security to protect endpoints.
 - Limit access based on roles or IP ranges.
 
@@ -280,12 +273,9 @@ protected void configure(HttpSecurity http) throws Exception {
 Additionally, restrict access using security groups and network ACLs in AWS to ensure only trusted IP ranges can access the endpoints. This setup helps prevent unauthorized access and secures sensitive application metrics and configurations.
 
 Actuator endpoints can expose sensitive data, so secure them adequately.
-
 - Use Spring Security to protect endpoints.
 - Limit access based on roles or IP ranges.
-
 Example:
-
 ```java
 @Override
 protected void configure(HttpSecurity http) throws Exception {
@@ -298,11 +288,9 @@ protected void configure(HttpSecurity http) throws Exception {
 ```
 
 #### Customizing Endpoints
-
 In `application.properties` or `application.yml`:
 
 For example, using `application.yml`:
-
 ```yaml
 management:
   endpoints:
