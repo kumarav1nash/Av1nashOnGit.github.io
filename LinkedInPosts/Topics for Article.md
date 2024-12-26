@@ -1,6 +1,7 @@
-- Logging In Spring Boot and Best Practices []
-- Spring Boot Actuator
-- In-Memory Caching in Spring boot
+- Logging In Spring Boot and Best Practices [✓]
+- Spring Boot Actuator [✓]
+- In-Memory Caching in Spring boot [✓]
 - Setting up Spring Boot Project And Best Practices
 - Spring Security and Best Practices
+- Liquibase Integration and Best Practices
 - 
