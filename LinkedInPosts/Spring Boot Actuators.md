@@ -304,21 +304,18 @@ management:
 ```
 
 or `application.properties`
-
 ```
 management.endpoints.web.exposure.include=health,info,metrics
 management.endpoint.health.show-details=always
 ```
 
 #### Production Recommendations
-
 - Expose only necessary endpoints.
 - Use HTTPS for secure communication.
 - Integrate with monitoring systems.
 - Enable authentication and authorization for all endpoints.
 
 ### Best Practices
-
 1. **Restrict Exposure**: Only expose required endpoints in production. This can be achieved effectively by leveraging network-level firewalls to block unauthorized access and API gateways to control and authenticate traffic. For instance, configure your cloud provider's security settings to allow access only from specific IP ranges or trusted networks.
 2. **Use Filters**: Exclude sensitive information using `management.endpoint.<name>.enabled` flags.
 3. **Monitor Effectively**: Integrate with APM tools for automated monitoring.
