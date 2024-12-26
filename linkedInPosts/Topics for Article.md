@@ -1,1 +1,2 @@
-- Logging In Springboot Best Practices
+- Logging In Spring Boot and Best Practices
+- Spring Boot Actuator
