@@ -99,7 +99,7 @@ Spring Boot Actuator provides several built-in endpoints that help in monitoring
 4. **`/actuator/env`**:
     - **Request**: No parameters or a specific property key as a query.
     - **Response**: Displays environment properties, including system properties and configuration files. Example:
-        
+
         ```json
         {
             "activeProfiles": ["prod"],
@@ -114,13 +114,10 @@ Spring Boot Actuator provides several built-in endpoints that help in monitoring
                 }
             ]
         }
-        ```
-        
+        ```        
 5. **`/actuator/loggers`**:
-    
     - **Request**: Optionally accepts a logger name as a path variable.
     - **Response**: Retrieves or updates the logging level of loggers. Example:
-        
         ```json
         {
             "loggers": {
@@ -131,12 +128,9 @@ Spring Boot Actuator provides several built-in endpoints that help in monitoring
             }
         }
         ```
-        
 6. **`/actuator/httptrace`**:
-    
     - **Request**: No parameters required.
     - **Response**: Shows the most recent HTTP requests and responses. Example:
-        
         ```json
         {
             "traces": [
@@ -160,8 +154,7 @@ Spring Boot Actuator provides several built-in endpoints that help in monitoring
         }
         ```
         
-7. **`/actuator/beans`**:
-    
+7. **`/actuator/beans`**: 
     - **Request**: No parameters required.
     - **Response**: Lists all Spring beans in the application context, including their scope and dependencies. Example:
         
@@ -175,8 +168,7 @@ Spring Boot Actuator provides several built-in endpoints that help in monitoring
                 }
             ]
         }
-        ```
-        
+        ```    
 8. **`/actuator/configprops`**:
     
     - **Request**: No parameters required.
@@ -198,10 +190,8 @@ Spring Boot Actuator provides several built-in endpoints that help in monitoring
                 }
             }
         }
-        ```
-        
+        ```    
 9. **`/actuator/threaddump`**:
-    
     - **Request**: No parameters required.
     - **Response**: Dumps all threads' stack traces. Example:
         
@@ -218,9 +208,8 @@ Spring Boot Actuator provides several built-in endpoints that help in monitoring
             ]
         }
         ```
-        
+ 
 10. **`/actuator/mappings`**:
-    
     - **Request**: No parameters required.
     - **Response**: Displays all request-to-handler mappings. Example:
         
