@@ -7,4 +7,4 @@
 - Docker cheatsheet [x]
 - Git cheatsheet [x]
 - Kafka Refresher [x]
-- 
+- Hikari [x]
