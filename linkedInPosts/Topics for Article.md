@@ -4,4 +4,5 @@
 - Setting up Spring Boot Project And Best Practices [x]
 - Spring Security and Best Practices [x]
 - Liquibase Integration and Best Practices [x]
-- 
+- Docker cheatsheet [x]
+- Git cheatsheet [x]
