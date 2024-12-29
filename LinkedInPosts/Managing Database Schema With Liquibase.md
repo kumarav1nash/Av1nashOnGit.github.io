@@ -112,18 +112,13 @@ spring.datasource.password=example
 3. **Consistent Environments**: Test changes in staging environments before deploying to production.
 4. **Automate**: Use Spring Boot’s integration with CI/CD tools to automate schema deployments.
 5. **Naming Conventions**: Use descriptive IDs and authors in ChangeSets.
-
 6. **Backups**: Always back up the database before applying changes.
-    
 
 ---
 
 ### Production Best Practices
-
 1. **Immutable Changelogs**: Never modify an already applied ChangeSet. Instead, create a new ChangeSet for additional changes.
-    
 2. **Use Contexts and Labels**: Use Liquibase contexts or labels to apply ChangeSets conditionally based on the environment.
-    
     ```xml
     <changeSet id="2" author="avinash" context="production">
         <addColumn tableName="user">
@@ -131,9 +126,7 @@ spring.datasource.password=example
         </addColumn>
     </changeSet>
     ```
-    
 3. **Pre-Deployment Validations**: Run Liquibase's `status` and `validate` commands to ensure there are no pending or invalid changes. For example:
-    
 
 ```bash
 liquibase status
@@ -174,7 +167,6 @@ logging.level.liquibase=DEBUG
 9. **Database Monitoring**: Monitor database performance during and after Liquibase deployments to detect any anomalies.
     
 10. **Documentation**: Document all changes and include explanations for complex ChangeSets.
-    
 
 ---
 
@@ -214,11 +206,9 @@ This will scan your database schema and produce an XML changelog that includes a
         }
     }
     ```
-    
 2. **GitLab CI/CD**:
-    
     - Define Liquibase commands in `.gitlab-ci.yml`.
-    
+
     ```yaml
     db_update:
       script:
