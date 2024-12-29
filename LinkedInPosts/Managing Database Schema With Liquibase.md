@@ -1,5 +1,3 @@
-### What is Liquibase?
-
 Liquibase simplifies database schema management by enabling:
 
 - **Tracking Changes**: Maintain a version history of database changes by recording every modification in changelog files. These logs are stored in a dedicated table (`DATABASECHANGELOG`) within your database, ensuring a clear audit trail of applied changes.
