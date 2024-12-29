@@ -156,6 +156,9 @@ liquibase validate
 - The `validate` command ensures that the changelog and database state are valid, highlighting any inconsistencies.
 
 4. **Enable Logging**: Configure detailed logging for Liquibase to debug issues during production deployments.
+```
+logging.level.liquibase=DEBUG
+```
     
 5. **Dry Run**: Use the `updateSQL` command to generate SQL scripts and review them before applying changes to production.
     
