@@ -65,9 +65,7 @@ Liquibase simplifies database schema management by enabling:
     spring.liquibase.change-log=classpath:db/changelog/db.changelog-master.xml
     spring.datasource.url=jdbc:mysql://localhost:3306/mydb
     spring.datasource.username=root
-    spring.datasource.password=example
-    ```
-
+    spring.datasource.password=example    ```
 #### Create Changelogs
 
 1. **Directory Structure**:
