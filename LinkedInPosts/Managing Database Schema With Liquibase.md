@@ -60,10 +60,10 @@ Liquibase simplifies database schema management by enabling:
 2. **Configure Properties**: Define Liquibase properties in `application.properties` or `application.yml`:
     
     ```properties
-    spring.liquibase.change-log=classpath:db/changelog/db.changelog-master.xml
-    spring.datasource.url=jdbc:mysql://localhost:3306/mydb
-    spring.datasource.username=root
-    spring.datasource.password=example    ```
+spring.liquibase.change-log=classpath:db/changelog/db.changelog-master.xml
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+spring.datasource.username=root
+spring.datasource.password=example    ```
 #### Create Changelogs
 
 1. **Directory Structure**:
