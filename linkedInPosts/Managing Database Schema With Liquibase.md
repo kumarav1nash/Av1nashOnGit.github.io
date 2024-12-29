@@ -1,11 +1,3 @@
-### Introduction
-
-Liquibase is an open-source database schema change management tool that helps developers and database administrators automate, version, and track changes in database schemas. When integrated with Spring Boot, Liquibase becomes even more powerful, allowing seamless schema management in Java-based applications.
-
----
-
-### What is Liquibase?
-
 Liquibase simplifies database schema management by enabling:
 
 - **Tracking Changes**: Maintain a version history of database changes by recording every modification in changelog files. These logs are stored in a dedicated table (`DATABASECHANGELOG`) within your database, ensuring a clear audit trail of applied changes.
@@ -58,12 +50,13 @@ Liquibase simplifies database schema management by enabling:
     ```
     
 2. **Configure Properties**: Define Liquibase properties in `application.properties` or `application.yml`:
-    
-    ```properties
-    spring.liquibase.change-log=classpath:db/changelog/db.changelog-master.xml
-    spring.datasource.url=jdbc:mysql://localhost:3306/mydb
-    spring.datasource.username=root
-    spring.datasource.password=example    ```
+
+```properties
+spring.liquibase.change-log=classpath:db/changelog/db.changelog-master.xml
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+spring.datasource.username=root
+spring.datasource.password=example
+```
 #### Create Changelogs
 
 1. **Directory Structure**:
@@ -109,33 +102,23 @@ Liquibase simplifies database schema management by enabling:
     ```
     
 4. **Run Spring Boot Application**: On application startup, Liquibase automatically applies all pending changes.
-    
 
 ---
 
 ### Best Practices
 
 1. **Version Control**: Store changelogs in version control systems like Git to track changes and enable rollbacks.
-    
 2. **Keep Changes Small**: Each ChangeSet should represent a small, self-contained unit of work.
-    
 3. **Consistent Environments**: Test changes in staging environments before deploying to production.
-    
 4. **Automate**: Use Spring Boot’s integration with CI/CD tools to automate schema deployments.
-    
 5. **Naming Conventions**: Use descriptive IDs and authors in ChangeSets.
-    
 6. **Backups**: Always back up the database before applying changes.
-    
 
 ---
 
 ### Production Best Practices
-
 1. **Immutable Changelogs**: Never modify an already applied ChangeSet. Instead, create a new ChangeSet for additional changes.
-    
 2. **Use Contexts and Labels**: Use Liquibase contexts or labels to apply ChangeSets conditionally based on the environment.
-    
     ```xml
     <changeSet id="2" author="avinash" context="production">
         <addColumn tableName="user">
@@ -143,9 +126,7 @@ Liquibase simplifies database schema management by enabling:
         </addColumn>
     </changeSet>
     ```
-    
 3. **Pre-Deployment Validations**: Run Liquibase's `status` and `validate` commands to ensure there are no pending or invalid changes. For example:
-    
 
 ```bash
 liquibase status
@@ -156,6 +137,9 @@ liquibase validate
 - The `validate` command ensures that the changelog and database state are valid, highlighting any inconsistencies.
 
 4. **Enable Logging**: Configure detailed logging for Liquibase to debug issues during production deployments.
+```
+logging.level.liquibase=DEBUG
+```
     
 5. **Dry Run**: Use the `updateSQL` command to generate SQL scripts and review them before applying changes to production.
     
@@ -183,7 +167,6 @@ liquibase validate
 9. **Database Monitoring**: Monitor database performance during and after Liquibase deployments to detect any anomalies.
     
 10. **Documentation**: Document all changes and include explanations for complex ChangeSets.
-    
 
 ---
 
@@ -223,20 +206,16 @@ This will scan your database schema and produce an XML changelog that includes a
         }
     }
     ```
-    
 2. **GitLab CI/CD**:
-    
     - Define Liquibase commands in `.gitlab-ci.yml`.
-    
+
     ```yaml
     db_update:
       script:
         - ./gradlew update
     ```
-    
 
 #### Using Pre-conditions
-
 Preconditions ensure that ChangeSets are applied only when specific conditions are met. For example, before adding a new column to a table, you can check if the table exists to prevent errors in case it has not been created yet:
 
 ```xml
@@ -248,7 +227,6 @@ Preconditions ensure that ChangeSets are applied only when specific conditions a
 This ensures that the ChangeSet runs only if the `user` table already exists, making the migration process more robust and environment-aware.
 
 ---
-
 ### Resources
 
 1. [Liquibase Documentation](https://docs.liquibase.com/)
@@ -259,4 +237,4 @@ This ensures that the ChangeSet runs only if the `user` table already exists, ma
 
 ### Long Story short
 
-Liquibase streamlines database schema management, enabling seamless collaboration between development and operations teams. Its integration with Spring Boot makes it an indispensable tool for Java developers. By following best practices and leveraging its advanced features, organizations can ensure robust, auditable, and scalable database systems. Whether you're a developer or a DBA, Liquibase with Spring Boot equips you with the tools to manage schema changes confidently.
+Liquibase is an open-source database schema change management tool that helps developers and database administrators automate, version, and track changes in database schemas. When integrated with Spring Boot, Liquibase becomes even more powerful, allowing seamless schema management in Java-based applications.
