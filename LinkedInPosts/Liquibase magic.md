@@ -249,12 +249,6 @@ Preconditions ensure that ChangeSets are applied only when specific conditions a
 
 This ensures that the ChangeSet runs only if the `user` table already exists, making the migration process more robust and environment-aware.
 
-```xml
-<preConditions onFail="MARK_RAN">
-    <tableExists tableName="user"/>
-</preConditions>
-```
-
 ---
 
 ### Resources
