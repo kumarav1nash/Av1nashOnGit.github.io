@@ -214,10 +214,8 @@ This will scan your database schema and produce an XML changelog that includes a
       script:
         - ./gradlew update
     ```
-    
 
 #### Using Pre-conditions
-
 Preconditions ensure that ChangeSets are applied only when specific conditions are met. For example, before adding a new column to a table, you can check if the table exists to prevent errors in case it has not been created yet:
 
 ```xml
@@ -229,7 +227,6 @@ Preconditions ensure that ChangeSets are applied only when specific conditions a
 This ensures that the ChangeSet runs only if the `user` table already exists, making the migration process more robust and environment-aware.
 
 ---
-
 ### Resources
 
 1. [Liquibase Documentation](https://docs.liquibase.com/)
