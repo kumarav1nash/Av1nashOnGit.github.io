@@ -102,22 +102,17 @@ spring.datasource.password=example
     ```
     
 4. **Run Spring Boot Application**: On application startup, Liquibase automatically applies all pending changes.
-    
 
 ---
 
 ### Best Practices
 
 1. **Version Control**: Store changelogs in version control systems like Git to track changes and enable rollbacks.
-    
 2. **Keep Changes Small**: Each ChangeSet should represent a small, self-contained unit of work.
-    
 3. **Consistent Environments**: Test changes in staging environments before deploying to production.
-    
 4. **Automate**: Use Spring Boot’s integration with CI/CD tools to automate schema deployments.
-    
 5. **Naming Conventions**: Use descriptive IDs and authors in ChangeSets.
-    
+
 6. **Backups**: Always back up the database before applying changes.
     
 
