@@ -16,7 +16,7 @@ IELTS Certification (within 3 months )
 		- study the patterns [in progress]
 		- master DSA and give weekly leetcode test [x]
 		- give mock interviews [x]
-		- get refaral [x]
+		- get referral [x]
 		- give interview to top companies[x]
 		- secure the offer letter [x]
 
@@ -38,3 +38,7 @@ Fitness (continuation from prev year)
 		- Be more Dedicated [x]
 		- Continue having healthy diets [x]
 		- Start cooking yourself [x]
+
+ONDC Network
+		- Research around the technology [x]
+		- look for opportunities to break in [x]
