@@ -12,4 +12,7 @@ IELTS Certification (within 3 months )
 		- give the exam and get the certification [x]
 
 60 LPA or above package
-		- Study Alg
+		- Get the algomonster subscription [done]
+		- study the patterns [in progress]
+		- master DSA and give weekly leetcode test
+		- 
