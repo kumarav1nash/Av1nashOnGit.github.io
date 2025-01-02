@@ -25,4 +25,8 @@ Master in USA/EU (alternate path to 3 )
 		- apply for scholarship based on experience and btech degree [x]
 		- secure scholarship [x]
 		- go and study master course[x]
-		- bul
+		- build connections [x]
+		- land a great job [x]
+
+Content Creation (within 1st month )
+		- start creating content around
