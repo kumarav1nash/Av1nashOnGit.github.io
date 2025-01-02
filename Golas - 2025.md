@@ -29,4 +29,9 @@ Master in USA/EU (alternate path to 3 )
 		- land a great job [x]
 
 Content Creation (within 1st month )
-		- start creating content around
+		- start creating content around your learnings [in progress]
+		- be consistent [x]
+		- provide value [x]
+
+Fitness (continuation from prev year)
+		- 
