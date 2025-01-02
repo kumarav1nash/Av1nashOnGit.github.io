@@ -7,4 +7,9 @@ Get the Driving License (Within 2 months)
 
 IELTS Certification (within 3 months )
 		- gather information on exam pattern & what to learn [x]
-		- practice the moc
+		- practice the mocks [x]
+		- book the test [x]
+		- give the exam and get the certification [x]
+
+60 LPA or above package
+		- Study Alg
