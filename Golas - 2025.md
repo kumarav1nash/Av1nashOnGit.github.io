@@ -11,7 +11,7 @@ IELTS Certification (within 3 months )
 		- book the test [x]
 		- give the exam and get the certification [x]
 
-60 LPA or above package
+60 LPA or above package (within 6 month of the year)
 		- Get the algomonster subscription [done]
 		- study the patterns [in progress]
 		- master DSA and give weekly leetcode test [x]
@@ -19,3 +19,5 @@ IELTS Certification (within 3 months )
 		- get referal [x]
 		- give interview to top companies[x]
 		- secure the offer letter [x]
+Master in USA/EU (alternate path to 3 )
+		-
