@@ -14,5 +14,8 @@ IELTS Certification (within 3 months )
 60 LPA or above package
 		- Get the algomonster subscription [done]
 		- study the patterns [in progress]
-		- master DSA and give weekly leetcode test
-		- 
+		- master DSA and give weekly leetcode test [x]
+		- give mock interviews [x]
+		- get referal [x]
+		- give interview to top companies[x]
+		- secure the offer letter [x]
