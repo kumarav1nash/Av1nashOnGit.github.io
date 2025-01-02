@@ -19,5 +19,10 @@ IELTS Certification (within 3 months )
 		- get referal [x]
 		- give interview to top companies[x]
 		- secure the offer letter [x]
+
 Master in USA/EU (alternate path to 3 )
-		-
+		- get the IELTS certification [x]
+		- apply for scholarship based on experience and btech degree [x]
+		- secure scholarship [x]
+		- go and study master course[x]
+		- bul
