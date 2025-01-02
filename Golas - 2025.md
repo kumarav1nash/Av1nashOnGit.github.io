@@ -42,3 +42,5 @@ Fitness (continuation from prev year)
 ONDC Network
 		- Research around the technology [x]
 		- look for opportunities to break in [x]
+		- build something [x]
+		- 
