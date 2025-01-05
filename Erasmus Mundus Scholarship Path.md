@@ -71,7 +71,16 @@ Key Insights
 
 
 Reference and resource
-Winning CV - https://drive.google.com/file/d/1z772x7s7ZzxNzK16xk7ZUvjkG6NW3tud/view
+Winning CV - https://drive.google.com/file/d/1z772x7s7ZzxNzK16xk7ZUvjkG6NW3tud/view 
+![[sample cv for erasmus.pdf]]
 Motivation Video - https://www.youtube.com/watch?v=DaZ3Hld-bPM
 LOM tips video - https://www.youtube.com/watch?v=XWB09zmuK04
+usman's wa group - https://chat.whatsapp.com/Gt6W1OD2oFW2E7tCYi6oT8
+usman's website - https://scholarsavenue.com/
+ediss - https://www.master-ediss.eu/index.php/scholarship/
+
+
+
+EDISS ALUMNI - 
+Debayan - https://www.linkedin.com/in/debayanbhattacharyavit/
 
