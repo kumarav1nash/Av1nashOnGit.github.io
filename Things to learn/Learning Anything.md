@@ -23,4 +23,4 @@ Time Management Principle
 	- 10-10-10 rule
 		- 10 mins, 10 weeks, 10 years (what impact it'll bring)
 	- A Motivation system
-		- 
+		- ![[Screenshot 2025-01-07 at 3.12.48 PM.png]]
