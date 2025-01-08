@@ -2,8 +2,10 @@
 
 @Async annotation uses default executor to create and manage threads, if no default executor present it'll create new SimpleAsyncTaskExecutor.
 
-We should always create custom ThreadPoolTaskExecutor to have more control of thread management
+We should always create custom ThreadPoolTaskExecutor to have more control of thread management in spring boot
 ```java
 
 
 ```
+
+
