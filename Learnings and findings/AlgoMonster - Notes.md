@@ -5,3 +5,6 @@ Findings
 - For objects, Java uses a version of the previously mentioned Timsort that allows faster sorting of the partially sorted array
 Task
 - Practice Insertion sort, Bubble Sort and Selection Sort
+- you should quickly be able to write the code for these
+
+
