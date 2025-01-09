@@ -209,15 +209,110 @@ public CompletableFuture<String> asyncTask() {
 }
 ```
 
-#### **Security Implications**
 
-- Restrict access to asynchronous endpoints using Spring Security configurations.
-- Ensure thread pool isolation to prevent cross-contamination of sensitive data in multi-tenant applications.
+### Using the Custom TaskExecutor
 
----
+By defining this custom TaskExecutor bean, Spring Boot will use it for any method annotated with @Async. Here’s how the asynchronous processing will work:
 
-### **Conclusion**
+1. When a method annotated with @Async is called, Spring looks for a bean of type TaskExecutor.
+2. If a TaskExecutor bean named taskExecutor is found, it will be used to run the method in a separate thread.
+3. The ThreadPoolTaskExecutor ensures that the asynchronous tasks are executed according to the configured thread pool settings.
 
-Asynchronous processing in Spring Boot, when configured correctly, can significantly enhance application performance and scalability. By carefully enabling, configuring, and tuning task executors while incorporating advanced techniques like error handling and task chaining, developers can unlock the full potential of asynchronous programming.
+### Benefits of Custom TaskExecutor
 
-The next phase involves integrating asynchronous processing into real-world use cases, such as database operations, file processing, and API integrations, to demonstrate its transformative impact on system design.
+Using a custom TaskExecutor offers several benefits:
+
+- **Controlled Concurrency**: You can manage the number of concurrent threads, preventing resource exhaustion.
+- **Queue Management**: By setting the queue capacity, you can handle a large number of tasks without overwhelming the system.
+- **Thread Naming**: Custom thread names can simplify debugging and monitoring.
+- **Scalability**: Proper configuration allows your application to handle varying loads efficiently.
+
+By tuning these parameters based on your application’s requirements, you can optimize the performance and resource utilization of your Spring Boot application.
+
+Calculating the ideal number for corePoolSize, maxPoolSize, and queueCapacity in a ThreadPoolTaskExecutor involves understanding the workload characteristics of your application, including task duration, task arrival rate, and system resources. Here are steps and considerations for calculating these values:
+
+### 1. Understand Your Workload
+
+- **Task Duration**: How long does each task typically take to execute? Measure or estimate the average and peak durations.
+- **Task Arrival Rate**: How frequently do new tasks arrive? Measure the average and peak rates at which tasks are submitted.
+- **Task Nature**: Are the tasks CPU-bound, I/O-bound, or a mix of both? CPU-bound tasks benefit more from parallel execution than I/O-bound tasks.
+
+### 2. System Resources
+
+- **CPU Cores**: How many CPU cores are available? For CPU-bound tasks, you don't want to exceed the number of cores significantly.
+- **Memory**: How much memory does each task consume? Ensure that increasing the queue capacity and thread pool size does not exhaust system memory.
+
+### 3. Calculating Core Pool Size (corePoolSize)
+
+For CPU-bound tasks:
+
+- A good starting point is to set corePoolSize to the number of available CPU cores. This ensures that each task has its own core and minimizes context switching.
+- Formula: corePoolSize = Number of CPU cores
+
+For I/O-bound or mixed tasks:
+
+- Since I/O-bound tasks spend time waiting, you can have more threads than CPU cores.
+- Estimate the ratio of waiting time to processing time (WT/PT).
+- Formula: corePoolSize = Number of CPU cores * (1 + WT/PT)
+
+### 4. Calculating Maximum Pool Size (maxPoolSize)
+
+- maxPoolSize should accommodate peak loads. This can be higher than corePoolSize, but going too high may lead to resource exhaustion.
+- If you expect occasional bursts of tasks, set maxPoolSize to a higher value to handle spikes.
+- Formula: maxPoolSize = corePoolSize * 2 (as a starting point, adjust based on monitoring)
+
+### 5. Calculating Queue Capacity (queueCapacity)
+
+- Queue capacity determines how many tasks can wait when all core threads are busy.
+- High queue capacity allows for handling large bursts of tasks without rejection but increases memory usage.
+- Low queue capacity may lead to task rejections under heavy load but keeps memory usage lower.
+
+Considerations:
+
+- If tasks are short and arrive quickly, a larger queue might be necessary.
+- If tasks are long-running, a smaller queue may be sufficient.
+
+### Example Calculation
+
+Suppose you have a system with 8 CPU cores, and tasks are a mix of CPU-bound and I/O-bound with a waiting time to processing time ratio of 3:1 (WT/PT = 3).
+
+**Core Pool Size Calculation**:
+
+- corePoolSize = Number of CPU cores * (1 + WT/PT)
+- corePoolSize = 8 * (1 + 3)
+- corePoolSize = 8 * 4 = 32
+
+**Max Pool Size Calculation:**
+
+- A starting point might be double the core pool size, depending on your system's capacity.
+- maxPoolSize = corePoolSize * 2
+- maxPoolSize = 32 * 2 = 64
+
+**Queue Capacity Calculation:**
+
+- If tasks are expected to arrive in bursts and you want to handle up to 5000 waiting tasks:
+- Ensure the system has enough memory to handle this queue size.
+
+ @Bean(name = "taskExecutor")
+    public TaskExecutor taskExecutor() {
+        ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+        executor.setCorePoolSize(32);  // Adjust based on your calculation
+        executor.setMaxPoolSize(64);   // Adjust based on your calculation
+        executor.setQueueCapacity(5000);  // Adjust based on your needs and system capacity
+        executor.setThreadNamePrefix("Async-");
+        executor.initialize();
+        return executor;
+    }
+
+### Monitoring and Tuning
+
+After deploying your application, monitor the following metrics:
+
+- **Thread Pool Usage**: Ensure threads are not idle when there are tasks to be processed.
+- **Queue Length**: Ensure tasks are not spending too much time in the queue.
+- **System Resources**: Monitor CPU and memory usage to avoid resource exhaustion.
+- **Task Execution Time**: Ensure tasks are completing in a reasonable time.
+
+Based on these metrics, adjust corePoolSize, maxPoolSize, and queueCapacity to optimize performance and resource utilization.
+
+By carefully analyzing and adjusting these parameters, you can find the ideal configuration that balances performance, resource usage, and responsiveness for your specific workload and system environment.
