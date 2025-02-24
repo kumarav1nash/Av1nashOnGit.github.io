@@ -50,27 +50,21 @@
 #### 4. **Iteration**
 
 - **HashMap** uses `Iterator` (modern, flexible):
-    
-    java
-    
-    Copy
-    
+ ```java
     Iterator<Map.Entry<String, Integer>> it = map.entrySet().iterator();
     while (it.hasNext()) {
         it.remove(); // Supported
     }
+```
     
 - **Hashtable** uses `Enumeration` (legacy):
-    
-    java
-    
-    Copy
-    
-    Enumeration<Integer> e = table.elements();
+    ```java
+      Enumeration<Integer> e = table.elements();
     while (e.hasMoreElements()) {
         e.nextElement();
         // No remove() method
     }
+```
     
 
 #### 5. **Legacy vs. Modern**
@@ -98,11 +92,7 @@
 ---
 
 ### **Example Code**
-
-java
-
-Copy
-
+```java
 // HashMap Example
 HashMap<String, Integer> hashMap = new HashMap<>();
 hashMap.put("A", 1);
@@ -114,6 +104,7 @@ Hashtable<String, Integer> hashtable = new Hashtable<>();
 hashtable.put("A", 1);
 // hashtable.put(null, 2);  // Throws NullPointerException
 // hashtable.put("B", null);// Throws NullPointerException
+```
 
 ---
 
