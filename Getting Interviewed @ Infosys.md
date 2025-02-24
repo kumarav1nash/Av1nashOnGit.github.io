@@ -164,3 +164,183 @@
     • Describe a challenging situation you encountered in a project and how you solved it.
 
 
+### **Core Java Questions**
+
+1. **OOP Concepts**:
+    
+    - Explain inheritance, encapsulation, polymorphism, and abstraction.
+        
+    - Differences between abstract classes and interfaces.
+        
+    - Method overloading vs. overriding.
+        
+    - Static vs. dynamic binding.
+        
+2. **Java 8+ Features**:
+    
+    - Lambda expressions and functional interfaces.
+        
+    - Streams API and its advantages.
+        
+    - `Optional` class and its use cases.
+        
+3. **Memory Management**:
+    
+    - Explain the Java Memory Model.
+        
+    - Garbage collection mechanisms and algorithms.
+        
+4. **Multithreading**:
+    
+    - Differences between `Runnable` and `Thread`.
+        
+    - Synchronization, `volatile`, and thread pools.
+        
+    - Deadlock prevention strategies.
+        
+5. **Collections Framework**:
+    
+    - Differences between `ArrayList` and `LinkedList`.
+        
+    - How `HashMap` works internally (hashing, collision resolution).
+        
+    - `ConcurrentHashMap` vs. `Hashtable`.
+        
+6. **Exception Handling**:
+    
+    - Checked vs. unchecked exceptions.
+        
+    - Custom exception creation.
+        
+7. **Design Patterns**:
+    
+    - Singleton pattern (thread-safe implementations).
+        
+    - Factory and Strategy patterns.
+        
+
+---
+
+### **Spring Boot Questions**
+
+8. **Basics**:
+    
+    - Advantages of Spring Boot over traditional Spring.
+        
+    - What is auto-configuration? How does it work?
+        
+    - Key annotations: `@SpringBootApplication`, `@RestController`, `@Service`, `@Autowired`, `@ComponentScan`.
+        
+9. **REST APIs**:
+    
+    - How to create a RESTful service in Spring Boot.
+        
+    - Differences between `@Controller` and `@RestController`.
+        
+    - Handling HTTP methods (GET, POST, PUT, DELETE).
+        
+10. **Data Access**:
+    
+    - Spring Data JPA and its benefits.
+        
+    - Writing custom queries using `@Query`.
+        
+    - Transaction management (`@Transactional`).
+        
+11. **Microservices**:
+    
+    - How does Spring Boot support microservices?
+        
+    - Experience with Spring Cloud (Eureka, Zuul, Hystrix).
+        
+12. **Testing**:
+    
+    - Unit testing with JUnit and Mockito.
+        
+    - Testing REST APIs using `@WebMvcTest`.
+        
+13. **Security**:
+    
+    - Basics of Spring Security (authentication, authorization).
+        
+    - Securing REST APIs with JWT.
+        
+
+---
+
+### **Database/SQL Questions**
+
+14. **SQL Basics**:
+    
+    - Write a query to find the second-highest salary.
+        
+    - Differences between `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN`.
+        
+    - Normalization (1NF, 2NF, 3NF).
+        
+15. **ACID Properties**:
+    
+    - Explain atomicity, consistency, isolation, durability.
+        
+16. **JDBC**:
+    
+    - Steps to connect Java with a database.
+        
+    - Differences between `Statement` and `PreparedStatement`.
+        
+
+---
+
+### **Coding Problems**
+
+17. **Algorithms**:
+    
+    - Reverse a string/array.
+        
+    - Find duplicates or missing numbers in an array.
+        
+    - Check for palindromes.
+        
+    - Fibonacci series.
+        
+18. **Data Structures**:
+    
+    - Reverse a linked list.
+        
+    - Implement a stack/queue.
+        
+    - Binary tree traversal (in-order, pre-order).
+        
+19. **Problem-Solving**:
+    
+    - Find the longest substring without repeating characters.
+        
+    - Two-sum problem.
+        
+    - FizzBuzz.
+        
+
+---
+
+### **System Design (Mid/Senior Level)**
+
+20. Design a REST API for an e-commerce cart.
+    
+21. How would you optimize a slow Spring Boot application?
+    
+22. Discuss scalability considerations for a banking app.
+    
+
+---
+
+### **Behavioral/HR Questions**
+
+23. Tell me about yourself.
+    
+24. Describe a challenging project and how you handled it.
+    
+25. Why Infosys?
+    
+26. How do you handle conflicting deadlines?
+    
+27. Explain a situation where you improved team productivity.
