@@ -19,6 +19,7 @@
 - **Exception Handling:**  
     • How do you handle exceptions in Java?  
     • What is the difference between checked and unchecked exceptions?
+- **General Questions**
     
 
 ---
