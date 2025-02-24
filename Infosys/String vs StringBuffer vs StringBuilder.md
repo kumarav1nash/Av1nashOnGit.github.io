@@ -90,12 +90,12 @@ System.out.println(sbl); // "Hello World"
 
 ### **Summary Table**
 
-|**Feature**|`String`|`StringBuffer`|`StringBuilder`|
-|---|---|---|---|
-|**Mutability**|Immutable|Mutable|Mutable|
-|**Thread Safety**|Yes (inherent)|Yes (synchronized)|No|
-|**Performance**|Slow for changes|Moderate|Fastest|
-|**Use Case**|Fixed values|Multi-threaded apps|Single-threaded apps|
+| **Feature**       | `String`         | `StringBuffer`      | `StringBuilder`      |
+| ----------------- | ---------------- | ------------------- | -------------------- |
+| **Mutability**    | Immutable        | Mutable             | Mutable              |
+| **Thread Safety** | Yes (inherent)   | Yes (synchronized)  | No                   |
+| **Performance**   | Slow for changes | Moderate            | Fastest              |
+| **Use Case**      | Fixed values     | Multi-threaded apps | Single-threaded apps |
 
 ---
 
@@ -109,11 +109,7 @@ System.out.println(sbl); // "Hello World"
     
 
 **Example in a Loop**:
-
-java
-
-Copy
-
+```java
 // Inefficient with String:
 String result = "";
 for (int i = 0; i < 1000; i++) {
@@ -125,6 +121,7 @@ StringBuilder sb = new StringBuilder();
 for (int i = 0; i < 1000; i++) {
     sb.append(i); // Modifies one object
 }
+```
 
 ---
 
