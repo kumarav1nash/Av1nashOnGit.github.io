@@ -12,7 +12,7 @@
     • How do HashMap and Hashtable differ?[Hashmap vs Hashtable](obsidian://open?vault=obsidian&file=Infosys%2FHashmap%20vs%20Hashtable)
     
 - **String Handling:**  
-    • What is meant by string immutability in Java?  
+    • What is meant by string immutability in Java?  [String immutability](obsidian://open?vault=obsidian&file=Infosys%2FString%20immutability)
     • How do String, StringBuffer, and StringBuilder differ?
     
 - **Exception Handling:**  

@@ -6,14 +6,8 @@
 
 1. **No In-Place Modifications**:  
     Methods like `concat()`, `toUpperCase()`, or `substring()` return **new strings** instead of modifying the original.
-    
-    java
-    
-    Copy
-    
-    String s1 = "Hello";
-    String s2 = s1.concat(" World"); // Creates a new object "Hello World"
-    System.out.println(s1); // Output: "Hello" (original unchanged)
+    ```jav
+```
     
 2. **Security**:  
     Immutable strings prevent tampering (e.g., passwords in `String` remain unchanged after creation).
