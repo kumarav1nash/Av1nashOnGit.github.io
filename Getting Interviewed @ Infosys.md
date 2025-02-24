@@ -2,9 +2,9 @@
 
 - **OOP Fundamentals:**  
     • What are the four pillars of Object-Oriented Programming?  
+		
+	
 
-> [!NOTE]
->      Ans - 
 
     • What is polymorphism and how is it implemented in Java?
     
