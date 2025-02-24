@@ -20,16 +20,6 @@
     • What is the difference between checked and unchecked exceptions?
 - **General Questions**
 	- What is the difference between a Local variable and an Instance variable?
-	- What is a Class in Java?
-	- What is an Object in Java?
-	- Explain the OOPs concepts in Java. (Abstraction, Encapsulation, Inheritance, Polymorphism)
-	- What is Inheritance?
-	- What is Encapsulation?
-	- What is Polymorphism?
-	- What is Method Overloading?
-	- What is an Interface in Java?
-	- What is an Abstract class?
-    
 
 ---
 
