@@ -6,8 +6,14 @@
 
 1. **No In-Place Modifications**:  
     Methods like `concat()`, `toUpperCase()`, or `substring()` return **new strings** instead of modifying the original.
-    ```jav
-```
+    
+    java
+    
+    Copy
+    
+    String s1 = "Hello";
+    String s2 = s1.concat(" World"); // Creates a new object "Hello World"
+    System.out.println(s1); // Output: "Hello" (original unchanged)
     
 2. **Security**:  
     Immutable strings prevent tampering (e.g., passwords in `String` remain unchanged after creation).
@@ -17,14 +23,11 @@
     
 4. **String Pool Optimization**:  
     Java reuses strings from the **string pool** (a special memory area) to save memory.
-    
-    java
-    
-    Copy
-    
+    ```java
     String a = "Java";    // Stored in the string pool
     String b = "Java";    // Reuses the same "Java" from the pool
     System.out.println(a == b); // true (same memory address)
+```
     
 5. **Hash Caching**:  
     The hashcode of a `String` is cached after the first calculation (used in `HashMap`, `HashSet`), improving performance.
@@ -33,11 +36,7 @@
 ---
 
 ### **Example: Immutability in Action**
-
-java
-
-Copy
-
+```java
 String s = "Hello";
 s.toUpperCase(); // Returns "HELLO" but doesn't modify the original
 System.out.println(s); // Output: "Hello"
@@ -45,6 +44,7 @@ System.out.println(s); // Output: "Hello"
 // To "modify" the string, reassign it:
 s = s.toUpperCase(); // Now s points to a new object "HELLO"
 System.out.println(s); // Output: "HELLO"
+```
 
 ---
 
@@ -70,13 +70,10 @@ System.out.println(s); // Output: "HELLO"
 - **Performance Overhead**:  
     Frequent string manipulations (e.g., concatenation in loops) create many temporary objects.  
     **Solution**: Use `StringBuilder` or `StringBuffer` for mutable sequences.
-    
-    java
-    
-    Copy
-    
+    ```java
     StringBuilder sb = new StringBuilder("Hello");
     sb.append(" World"); // Modifies the same object
+```
     
 - **Memory Waste**:  
     Unused strings may linger in the pool until garbage collected.
@@ -87,24 +84,17 @@ System.out.println(s); // Output: "HELLO"
 ### **String Pool vs. `new` Keyword**
 
 - **Literal Assignment**: Uses the string pool.
-    
-    java
-    
-    Copy
-    
+    ```java
     String s1 = "Java"; // Pooled
     String s2 = "Java"; // Reuses pooled "Java"
+```
     
 - **`new` Keyword**: Forces a new object outside the pool.
-    
-    java
-    
-    Copy
-    
+    ```java
     String s3 = new String("Java"); // New object in heap memory
     String s4 = new String("Java"); // Another new object
     System.out.println(s3 == s4); // false (different addresses)
-    
+```
 
 ---
 
