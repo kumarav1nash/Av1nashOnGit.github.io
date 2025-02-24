@@ -344,3 +344,76 @@
 26. How do you handle conflicting deadlines?
     
 27. Explain a situation where you improved team productivity.
+
+
+Master Java Like a Pro: A Complete Timeline of Java Versions and Their Game-Changing Features:-  
+  
+Java has been evolving continuously, introducing features that enhance performance, developer productivity, and modern application requirements.  
+  
+Here’s a comprehensive summary of all Java versions and their key features  
+  
+🔹 Java 8 (2014)  
+• Lambda Expressions: Functional programming in Java!  
+• Stream API: Simplified data processing.  
+• Optional Class: Avoid NullPointerException.  
+•. Date & Time API: A modern replacement for [java.util.Date](http://java.util.date/).  
+• Default Methods: Add methods in interfaces without breaking implementations.  
+  
+🔹 Java 9 (2017)  
+• Module System (Jigsaw): Better modularity and encapsulation.  
+• JShell: Interactive Java REPL for quick experimentation.  
+• Stream API Enhancements: Added takeWhile, dropWhile, and iterate.  
+• HTTP/2 Client: Improved HTTP communication.  
+  
+🔹 Java 10 (2018)  
+• Local Variable Type Inference: Introduced var for cleaner code.  
+• Garbage Collector Enhancements: Improved performance.  
+• Application Class-Data Sharing (AppCDS): Reduced startup time.  
+  
+🔹 Java 11 (2018)  
+• Long-Term Support (LTS) release.  
+• HTTP Client (Standard): Fully featured HTTP/2 support.  
+• String Enhancements: Methods like isBlank(), lines(), strip().  
+• File Methods: readString() and writeString().  
+• Lambda Local Variables: var in lambda parameters.  
+  
+🔹 Java 12 (2019)  
+• Switch Expressions (Preview): Simplified switch syntax.  
+• Default G1 Garbage Collector Improvements.  
+  
+🔹 Java 13 (2019)  
+• Text Blocks (Preview): Multi-line strings made easy.  
+• Switch Expressions Enhancements (Preview).  
+  
+🔹 Java 14 (2020)  
+• Record Types (Preview): Simplified data classes.  
+• Pattern Matching for instanceof (Preview).  
+• Helpful NullPointerExceptions: Easier debugging.  
+  
+🔹 Java 15 (2020)  
+• Text Blocks (Standard): Officially released.  
+• Sealed Classes (Preview): Control inheritance hierarchies.  
+• Hidden Classes: Better support for frameworks.  
+  
+🔹 Java 16 (2021)  
+• Record Types (Standard): Officially released.  
+• Pattern Matching for instanceof (Standard).  
+• Vector API (Incubator): Optimized data processing.  
+  
+🔹 Java 17 (2021)  
+• LTS Release: Stability for production use.  
+• Sealed Classes (Standard).  
+• Pattern Matching for switch (Preview).  
+• Deprecation of Applet API.  
+  
+🔹 Java 18 (2022)  
+• Simple Web Server: For testing and prototyping.  
+• UTF-8 by Default: Standard encoding for Java programs.  
+  
+🔹 Java 19 (2022)  
+• Virtual Threads (Preview): Lightweight threads for high scalability.  
+• Structured Concurrency (Incubator): Simplified multi-threaded programming.  
+  
+🔹 Java 20 (2023)  
+• Scoped Values (Incubator): Enhanced thread-local variables.  
+• Pattern Matching Enhancements.
