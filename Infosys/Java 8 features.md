@@ -141,13 +141,9 @@ String formatted = date.format(formatter); // e.g., "25-10-2023"
 ```
 
 **Key Classes**:
-
 - `LocalDate`, `LocalTime`, `LocalDateTime`
-    
 - `Period`, `Duration`
-    
 - `ZonedDateTime` (for time zones)
-    
 
 **Use Case**: Scheduling, event management, and financial calculations.
 
@@ -159,11 +155,7 @@ String formatted = date.format(formatter); // e.g., "25-10-2023"
 **Why**: Provide target types for lambda expressions.
 
 **Example**:
-
-java
-
-Copy
-
+```java
 // Predicate: returns boolean
 Predicate<Integer> isEven = n -> n % 2 == 0;
 System.out.println(isEven.test(4)); // true
@@ -171,17 +163,14 @@ System.out.println(isEven.test(4)); // true
 // Function: transforms input
 Function<String, Integer> length = String::length;
 System.out.println(length.apply("Java")); // 4
+```
 
 **Common Interfaces**:
 
 - `Predicate<T>`: `test(T) -> boolean`
-    
 - `Function<T, R>`: `apply(T) -> R`
-    
 - `Consumer<T>`: `accept(T) -> void`
-    
 - `Supplier<T>`: `get() -> T`
-    
 
 **Use Case**: Streams, custom lambda logic.
 
@@ -193,15 +182,13 @@ System.out.println(length.apply("Java")); // 4
 **Why**: Leverage multi-core CPUs for faster bulk operations.
 
 **Example**:
-
-java
-
-Copy
+```java
 
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 int sum = numbers.parallelStream()
                  .mapToInt(n -> n)
                  .sum();
+```
 
 **Caution**: Use only for large datasets or CPU-intensive tasks (overhead for small data).
 
@@ -218,8 +205,7 @@ java
 
 Copy
 
-ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
-engine.eval("print('Hello from JavaScript!')");
+
 
 **Use Case**: Scripting, dynamic configurations.
 
