@@ -15,6 +15,7 @@
     • What is the difference between ArrayList and LinkedList?  
 	    [Arraylist vs linkedlist](obsidian://open?vault=obsidian&file=Infosys%2FArrayList%20vs%20LinkedList)
     • How do HashMap and Hashtable differ?
+	    [Hashmap vs Hashtable](obsidian://open?vault=obsidian&file=Infosys%2FHashmap%20vs%20Hashtable)
     
 - **String Handling:**  
     • What is meant by string immutability in Java?  
