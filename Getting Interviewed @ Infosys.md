@@ -20,6 +20,35 @@
     • How do you handle exceptions in Java?  
     • What is the difference between checked and unchecked exceptions?
 - **General Questions**
+	- What is Java?
+	- What are the features of Java?
+	- How does Java enable high performance?
+	- What are Java IDEs?
+	- What is a Constructor in Java?
+	- What is the difference between a Local variable and an Instance variable?
+	- What is a Class in Java?
+	- What is an Object in Java?
+	- Explain the OOPs concepts in Java. (Abstraction, Encapsulation, Inheritance, Polymorphism)
+	- What is Inheritance?
+	- What is Encapsulation?
+	- What is Polymorphism?
+	- What is Method Overloading?
+	- What is an Interface in Java?
+	- What is an Abstract class?- What is Java?
+	- What are the features of Java?
+	- How does Java enable high performance?
+	- What are Java IDEs?
+	- What is a Constructor in Java?
+	- What is the difference between a Local variable and an Instance variable?
+	- What is a Class in Java?
+	- What is an Object in Java?
+	- Explain the OOPs concepts in Java. (Abstraction, Encapsulation, Inheritance, Polymorphism)
+	- What is Inheritance?
+	- What is Encapsulation?
+	- What is Polymorphism?
+	- What is Method Overloading?
+	- What is an Interface in Java?
+	- What is an Abstract class?
     
 
 ---
@@ -52,6 +81,33 @@
 - **Dependency Injection & Bean Management:**  
     • Explain the concept of dependency injection and how it is implemented in Spring Boot.  
     • How do you get a list of beans configured in your application?
+- General 
+- - What are the advantages of using Spring Boot?
+- What are the key components of Spring Boot? (Spring Boot auto-configuration, Spring Boot CLI, Spring Boot starter POMs, Spring Boot Actuators)
+- Why is Spring Boot preferred over Spring?
+- What are Spring Boot Starters? Can you name a few commonly used starters? (Data JPA starter, Test Starter, Security starter, Web starter, Mail starter, Thymeleaf starter)
+- How does Spring Boot work?
+- What does the `@SpringBootApplication` annotation do internally?
+- What is the purpose of `@ComponentScan` in Spring Boot?
+- How does a Spring Boot application get started?
+- What are common Spring Boot CLI commands?
+- What is Spring Boot CLI and its benefits?
+- What is Spring Initializer?
+- What are starter dependencies in Spring Boot?
+- What is Dependency Injection in Spring Boot?
+- How does Spring Boot handle externalized configuration?
+- What is Spring Boot DevTools?
+- What are Spring Boot Actuator endpoints?
+- What are different scopes available in Spring Boot? (Singleton, Prototype, Request, Session, Application, Websocket)
+- What is Spring Boot's embedded server, and how to configure it?
+- How do you secure a Spring Boot application?
+- How does Spring Boot achieve auto-configuration?
+- What are Spring Boot filters and how are they used?
+- What is Swagger in Spring Boot?
+- What are Profiles in Spring Boot?
+- What differentiates Spring Data JPA and Hibernate?
+- How are `@RestController` and `@Controller` annotations different?
+- How do you connect Spring Boot to a database using JPA/JDBC?
     
 
 ---
