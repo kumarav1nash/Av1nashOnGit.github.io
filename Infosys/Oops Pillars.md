@@ -141,6 +141,7 @@ java
 
 Copy
 
+```java
 interface Payment {
     void pay(double amount);
 }
@@ -165,6 +166,7 @@ payment.pay(100); // Output: "Paid via Credit Card: $100"
 
 payment = new PayPal();
 payment.pay(50);  // Output: "Paid via PayPal: $50"
+```
 
 **Real-world analogy**:  
 A power button that works differently for a TV, laptop, or phone but has the same interface.

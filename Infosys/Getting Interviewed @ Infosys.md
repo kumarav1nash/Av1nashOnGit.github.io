@@ -2,8 +2,9 @@
 
 - **OOP Fundamentals:**  
     • What are the four pillars of Object-Oriented Programming
+	 [Oops Pillar](obsidian://open?vault=obsidian&file=Infosys%2FOops%20Pillars)
     • What is polymorphism and how is it implemented in Java?
-	[Polymorphism](obsidian://open?vault=obsidian&file=Infosys%2FPolymorphism)
+	 [Polymorphism](obsidian://open?vault=obsidian&file=Infosys%2FPolymorphism)
 - **Java 8 Features:**  
     • What are some of the key features introduced in Java 8 (e.g., lambda expressions, streams)?  
     • How do you use streams to process collections?
