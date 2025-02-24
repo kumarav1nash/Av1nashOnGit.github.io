@@ -200,12 +200,10 @@ int sum = numbers.parallelStream()
 **Why**: Execute JS code within Java applications.
 
 **Example**:
-
-java
-
-Copy
-
-
+```java
+ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
+engine.eval("print('Hello from JavaScript!')");
+```
 
 **Use Case**: Scripting, dynamic configurations.
 
@@ -217,16 +215,13 @@ Copy
 **Why**: Improved static analysis and code validation.
 
 **Example**:
-
-java
-
-Copy
-
+```java
 @Repeatable(Checks.class)
 @interface Check { String value(); }
 
 @Check("security") @Check("performance")
 class Application { ... }
+```
 
 **Use Case**: Frameworks (e.g., Spring, Hibernate) and custom validations.
 
@@ -235,13 +230,9 @@ class Application { ... }
 ### **Impact of Java 8**
 
 - **Functional Programming**: Made Java competitive with Scala, Kotlin.
-    
 - **Readability**: Streams and lambdas reduced boilerplate.
-    
 - **Concurrency**: Parallel streams simplified multi-threading.
-    
 - **Modern APIs**: `java.time` and `Optional` fixed long-standing issues.
-    
 
 **Bonus**: The JVM’s **Metaspace** replaced PermGen for class metadata (reduces `OutOfMemoryError`).
 
