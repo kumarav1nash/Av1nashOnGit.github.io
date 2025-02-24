@@ -85,14 +85,9 @@ List<Integer> squares = numbers.parallelStream()
 #### **d. Boxing/Unboxing**
 
 - Primitive streams (`IntStream`, `LongStream`) avoid autoboxing overhead:
-    
-    java
-    
-    Copy
-    
-    
-    
-
+    ```java
+    IntStream.range(1, 1000).sum(); // Faster than Stream<Integer>
+	```
 #### **e. Method References vs Lambdas**
 
 - Method references (e.g., `String::length`) are marginally faster than lambdas.
@@ -112,11 +107,7 @@ List<Integer> squares = numbers.parallelStream()
 ---
 
 ### **5. Example: Stream vs Loop Performance**
-
-java
-
-Copy
-
+```java
 // Loop (faster for small N)
 int sum = 0;
 for (int n : numbers) {
@@ -128,6 +119,7 @@ int sum = numbers.stream().reduce(0, Integer::sum);
 
 // Primitive Stream (optimized)
 int sum = numbers.stream().mapToInt(n -> n).sum();
+```
 
 ---
 
