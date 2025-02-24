@@ -32,10 +32,7 @@ Runnable r = () -> System.out.println("Hello World");
 **Why**: Enables parallel processing, improves readability, and avoids boilerplate loops.
 
 **Example**:
-
-java
-
-Copy
+```java
 
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 List<Integer> squares = numbers.stream()
@@ -43,17 +40,13 @@ List<Integer> squares = numbers.stream()
                                .map(n -> n * n)
                                .collect(Collectors.toList());
 // Output: [4, 16]
+```
 
 **Key Operations**:
-
 - **Filter**: `filter(Predicate)`
-    
 - **Transform**: `map(Function)`
-    
 - **Aggregate**: `reduce()`, `collect()`
-    
 - **Short-circuit**: `findFirst()`, `anyMatch()`
-    
 
 **Use Case**: Batch processing of data, database queries, and transformations.
 
@@ -65,14 +58,11 @@ List<Integer> squares = numbers.stream()
 **Why**: Forces developers to check for nulls and write safer code.
 
 **Example**:
-
+```
 java
 
 Copy
-
-Optional<String> name = Optional.ofNullable(getNameFromDB());
-String result = name.orElse("default");
-// If name is null, returns "default"
+```
 
 **Methods**:
 
