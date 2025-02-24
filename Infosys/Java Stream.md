@@ -21,49 +21,43 @@ Streams are a sequence of elements from a source (e.g., collections, arrays) tha
 
 #### **a. Filtering**
 ```java
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+List<Integer> evenNumbers = numbers.stream()
+    .filter(n -> n % 2 == 0) // Keep even numbers
+    .collect(Collectors.toList()); // Terminal operation
+// Result: [2, 4]
 ```
 
 #### **b. Mapping**
-
-java
-
-Copy
+```java
 
 List<String> names = Arrays.asList("Alice", "Bob");
 List<Integer> nameLengths = names.stream()
     .map(String::length) // Convert names to their lengths
     .collect(Collectors.toList());
 // Result: [5, 3]
+```
 
 #### **c. Aggregation**
-
-java
-
-Copy
-
+```java
 int sum = numbers.stream()
     .reduce(0, Integer::sum); // Sum all elements
 // Result: 15
+```
 
 #### **d. Short-Circuiting**
-
-java
-
-Copy
-
+```java
 Optional<Integer> firstEven = numbers.stream()
     .filter(n -> n > 10)
     .findFirst(); // Stops processing after the first match
+```
 
 #### **e. Parallel Processing**
-
-java
-
-Copy
-
+```java
 List<Integer> squares = numbers.parallelStream()
     .map(n -> n * n)
     .collect(Collectors.toList());
+```
 
 ---
 
@@ -96,7 +90,7 @@ List<Integer> squares = numbers.parallelStream()
     
     Copy
     
-    IntStream.range(1, 1000).sum(); // Faster than Stream<Integer>
+    
     
 
 #### **e. Method References vs Lambdas**
