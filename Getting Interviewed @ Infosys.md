@@ -2,9 +2,15 @@
 
 - **OOP Fundamentals:**  
     • What are the four pillars of Object-Oriented Programming?  
-		
-	
+```
+The four pillars of Object-Oriented Programming (OOP) are:
 
+Encapsulation: Bundling data (variables) and methods (functions) together and restricting direct access to some of an object's components.
+Abstraction: Hiding complex implementation details and exposing only the necessary parts of an object or method.
+Inheritance: Allowing one class (the child) to inherit attributes and behaviors (methods) from another class (the parent).
+Polymorphism: Enabling a single interface to represent different underlying forms (data types), allowing methods to process objects differently based on their data type or class.
+
+```
 
     • What is polymorphism and how is it implemented in Java?
     
