@@ -7,8 +7,9 @@
 	 [Polymorphism](obsidian://open?vault=obsidian&file=Infosys%2FPolymorphism)
 - **Java 8 Features:**  
     • What are some of the key features introduced in Java 8 (e.g., lambda expressions, streams)?  
-	    [Java 8 Features](obsidian://open?vault=obsidian&file=Infosys%2FJava%208%20features)
+	 [Java 8 Features](obsidian://open?vault=obsidian&file=Infosys%2FJava%208%20features)
     • How do you use streams to process collections?
+	    [Java Streams](obsidian://open?vault=obsidian&file=Infosys%2FJava%20Stream)
     
 - **Collections & Data Structures:**  
     • What is the difference between ArrayList and LinkedList?  
