@@ -19,25 +19,6 @@
     • How do you handle exceptions in Java?  
     • What is the difference between checked and unchecked exceptions?
 - **General Questions**
-	- What is Java?
-	- What are the features of Java?
-	- How does Java enable high performance?
-	- What are Java IDEs?
-	- What is a Constructor in Java?
-	- What is the difference between a Local variable and an Instance variable?
-	- What is a Class in Java?
-	- What is an Object in Java?
-	- Explain the OOPs concepts in Java. (Abstraction, Encapsulation, Inheritance, Polymorphism)
-	- What is Inheritance?
-	- What is Encapsulation?
-	- What is Polymorphism?
-	- What is Method Overloading?
-	- What is an Interface in Java?
-	- What is an Abstract class?- What is Java?
-	- What are the features of Java?
-	- How does Java enable high performance?
-	- What are Java IDEs?
-	- What is a Constructor in Java?
 	- What is the difference between a Local variable and an Instance variable?
 	- What is a Class in Java?
 	- What is an Object in Java?
