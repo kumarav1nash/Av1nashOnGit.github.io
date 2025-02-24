@@ -58,18 +58,16 @@ List<Integer> squares = numbers.stream()
 **Why**: Forces developers to check for nulls and write safer code.
 
 **Example**:
-```
-java
+```java
 
-Copy
+Optional<String> name = Optional.ofNullable(getNameFromDB());
+String result = name.orElse("default");
+// If name is null, returns "default"
 ```
 
 **Methods**:
-
 - `orElse()`, `orElseGet()`, `orElseThrow()`
-    
 - `isPresent()`, `ifPresent(Consumer)`
-    
 
 **Use Case**: Database results, API responses, and method return values.
 
@@ -81,11 +79,7 @@ Copy
 **Why**: Evolve interfaces without breaking existing implementations.
 
 **Example**:
-
-java
-
-Copy
-
+```java
 interface Vehicle {
     // Default method
     default void start() {
@@ -104,6 +98,7 @@ class Car implements Vehicle {}
 Car car = new Car();
 car.start();          // Calls default method
 Vehicle.stop();       // Calls static method
+```
 
 **Use Case**: Backward compatibility (e.g., adding `stream()` to `Collection` in Java 8).
 
@@ -115,22 +110,17 @@ Vehicle.stop();       // Calls static method
 **Why**: Simplify lambda expressions when calling existing methods.
 
 **Example**:
-
-java
-
-Copy
-
+```java
 List<String> names = Arrays.asList("Alice", "Bob");
 names.forEach(System.out::println); // Equivalent to (s) -> System.out.println(s)
+```
 
 **Types**:
 
 - Static method: `ClassName::methodName`
-    
 - Instance method: `instance::methodName`
-    
 - Constructor: `ClassName::new`
-    
+
 
 **Use Case**: Reusing existing methods in Streams and lambdas.
 
@@ -142,16 +132,13 @@ names.forEach(System.out::println); // Equivalent to (s) -> System.out.println(s
 **Why**: Fixes thread-safety and design flaws in legacy `Date`/`Calendar` classes.
 
 **Example**:
-
-java
-
-Copy
-
+```java
 LocalDate date = LocalDate.now();
 LocalDate nextWeek = date.plusDays(7);
 
 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 String formatted = date.format(formatter); // e.g., "25-10-2023"
+```
 
 **Key Classes**:
 
