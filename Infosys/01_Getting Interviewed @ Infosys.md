@@ -13,7 +13,7 @@
     
 - **Collections & Data Structures:**  
     • What is the difference between ArrayList and LinkedList?  
-	    [Arraylist vs linkedlist]()
+	    [Arraylist vs linkedlist](obsidian://open?vault=obsidian&file=Infosys%2FArrayList%20vs%20LinkedList)
     • How do HashMap and Hashtable differ?
     
 - **String Handling:**  
