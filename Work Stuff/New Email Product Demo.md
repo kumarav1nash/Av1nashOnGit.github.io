@@ -30,6 +30,7 @@
 #### What’s Next
 
 - **Ongoing LLD Optimization:** Further refinement of the low-level design to ensure simplicity, scalability, and long-term maintainability.
-    
+
 - **Continued Monitoring:** The commitment to a "monitoring by design" approach will be Continued
+
 - **Code Coverage:** We'll continue to improve the code coverage  
