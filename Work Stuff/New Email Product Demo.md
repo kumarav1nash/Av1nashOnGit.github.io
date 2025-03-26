@@ -15,7 +15,7 @@
 
 - **API-Based Email Services:**
     
-    - _Subscription-Based Emails:_ Features include sending welcome messages (including positive variants), as well as notifications for resume, pause, skip, cancel, change frequency, and addOnInc.
+    - _Subscription-Based Emails:_ Features include sending welcome emails as well as notifications for resume, pause, skip, cancel, change frequency, and addOnInc.
         
     - _Child Order-Based Emails:_ Includes notifications for contract pause confirmations, pre-authorization, pre-ship, pre-ship pull-forward, and order processing failures.
         
