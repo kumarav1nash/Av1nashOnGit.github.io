@@ -10,7 +10,7 @@
     
 - **Code Coverage Monitoring:** Jacoco has been integrated to monitor code coverage, which currently stands at 50%.
     
-- **Built-in Monitoring:** The system now includes monitoring by design.
+- **Built-in Monitoring:** The system Will includes monitoring by design. Meaning Every Scheduler wi
     
 
 #### What’s Completed
