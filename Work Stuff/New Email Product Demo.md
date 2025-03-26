@@ -10,14 +10,12 @@
     
 - **Code Coverage Monitoring:** Jacoco has been integrated to monitor code coverage, which currently stands at 50%.
     
-- **Built-in Monitoring:** The system Will includes monitoring by design. Meaning Every Scheduler wi
-    
-
+- **Built-in Monitoring:** The system Will includes monitoring by design. Meaning Every Scheduler State will be send to respective team every time it runs.
 #### What’s Completed
 
 - **API-Based Email Services:**
     
-    - _Subscription-Based Emails:_ Features include sending welcome messages (including positive variants), as well as notifications for resume, pause, skip, cancel, change frequency, and add-on inclusion.
+    - _Subscription-Based Emails:_ Features include sending welcome messages (including positive variants), as well as notifications for resume, pause, skip, cancel, change frequency, and addOnInc.
         
     - _Child Order-Based Emails:_ Includes notifications for contract pause confirmations, pre-authorization, pre-ship, pre-ship pull-forward, and order processing failures.
         
