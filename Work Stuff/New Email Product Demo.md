@@ -10,7 +10,7 @@
     
 - **Code Coverage Monitoring:** Jacoco has been integrated to monitor code coverage, which currently stands at 50%.
     
-- **Built-in Monitoring:** The system Will includes monitoring by design. Meaning Every Scheduler State will be send to respective team every time it runs.
+- **Built-in Scheduler Monitoring:** The system Will includes monitoring by design. Meaning Every Scheduler State will be send to respective team every time it runs.
 #### What’s Completed
 
 - **API-Based Email Services:**
