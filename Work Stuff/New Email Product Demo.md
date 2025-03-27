@@ -4,8 +4,7 @@
 	- Tables includes EmailRequest, EmailTemplate,EmailQueue & SchedulerAudit
 
 - **API Payload Restructuring:** Payloads have been redesigned to manage data efficiently without the need for external database calls.
-    
-- **Enhanced Low-Level Design:** The LLD has been simplified and improved by applying SOLID principles.
+- **Enhanced Low-Level Design:** The LLD has been simplified and improved by following SOLID principles.
 	- Means its easier to add new changes
 	- implement new email is now simplified
 	- no more bunch of changes for a small feature
