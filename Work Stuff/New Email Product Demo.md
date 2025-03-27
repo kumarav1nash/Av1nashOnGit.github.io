@@ -1,14 +1,21 @@
 #### What’s New
 
 - **Dedicated PostgreSQL Database:** A separate PostgresDB has been created.
+	- Tables includes EmailRequest, EmailTemplate,EmailQueue & SchedulerAudit
 
 - **API Payload Restructuring:** Payloads have been redesigned to manage data efficiently without the need for external database calls.
     
 - **Enhanced Low-Level Design:** The LLD has been simplified and improved by applying SOLID principles.
+	- Means its easier to add new changes
+	- implement new email is now simplified
+	- no more bunch of changes for a small feature
     
 - **Liquibase Integration:** SQL changes are now tracked using Liquibase.
+	- Now every changes is tracked
+	- no more manual storage and update of sql queries
     
-- **Code Coverage Monitoring:** Jacoco has been integrated to monitor code coverage, which currently stands at 50%.
+- **Code Coverage Monitoring:** Jacoco has been integrated to monitor code coverage
+	- currently we're at 50% code 
     
 - **Built-in Scheduler Monitoring:** The system Will includes monitoring by design. Meaning Every Scheduler State will be send to respective team every time it runs.
 #### What’s Completed
