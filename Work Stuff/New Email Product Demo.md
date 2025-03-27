@@ -17,7 +17,7 @@
 	- aiming to maximise it as much as possible with initial target to 70%
     
 - **Built-in Scheduler Monitoring:** The system Will includes monitoring by design.
-	- Meaning Every Scheduler trigger will generate and send relavent email to support or assigned team
+	- Meaning Every Scheduler trigger will generate and send relavent email to support or assigned team member
 	- no need manually creating creating support email trigger
 #### What’s Completed
 
