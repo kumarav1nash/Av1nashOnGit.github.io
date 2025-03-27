@@ -16,10 +16,11 @@
     
 - **Code Coverage Monitoring:** Jacoco has been integrated to monitor code coverage
 	- currently we've 50% code covered
-	- aiming to maximize it as much as possible with initial target to 70%
+	- aiming to maximise it as much as possible with initial target to 70%
     
 - **Built-in Scheduler Monitoring:** The system Will includes monitoring by design.
-	- Meaning Every Scheduler trigger will generate and sen
+	- Meaning Every Scheduler trigger will generate and send relavent email to support or assigned team
+	- no need manually creating creating support email trigger
 #### What’s Completed
 
 - **API-Based Email Services:**
