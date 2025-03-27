@@ -6,15 +6,14 @@
 - **API Payload Restructuring:** Payloads have been redesigned to manage data efficiently without the need for external database calls.
 - **Enhanced Low-Level Design:** The LLD has been simplified and improved by following SOLID principles.
 	- Means its easier to add new changes
-	- implement new email is now simplified
-	- no more bunch of changes for a small feature
+	- implementing new email is now simplified
+	- no more multiple file changes for a small feature in majority of cases
     
-- **Liquibase Integration:** SQL changes are now tracked using Liquibase.
-	- Now every changes is tracked
+- **Liquibase Integration:** SQL changes are now being tracked using Liquibase.
 	- no more manual storage and update of sql queries
     
 - **Code Coverage Monitoring:** Jacoco has been integrated to monitor code coverage
-	- currently we've 50% code covered
+	- currently we've 50% code coverage
 	- aiming to maximise it as much as possible with initial target to 70%
     
 - **Built-in Scheduler Monitoring:** The system Will includes monitoring by design.
