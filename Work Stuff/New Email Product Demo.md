@@ -15,9 +15,11 @@
 	- no more manual storage and update of sql queries
     
 - **Code Coverage Monitoring:** Jacoco has been integrated to monitor code coverage
-	- currently we're at 50% code 
+	- currently we've 50% code covered
+	- aiming to maximize it as much as possible with initial target to 70%
     
-- **Built-in Scheduler Monitoring:** The system Will includes monitoring by design. Meaning Every Scheduler State will be send to respective team every time it runs.
+- **Built-in Scheduler Monitoring:** The system Will includes monitoring by design.
+	- Meaning Every Scheduler trigger will generate and sen
 #### What’s Completed
 
 - **API-Based Email Services:**
